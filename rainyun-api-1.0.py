@@ -11,7 +11,6 @@ headers_yh = {
 }
 res_points = requests.request("GET", url, headers=headers_yh, data=payload)
 zh_json = res_points.json()
-##print(zh_json)
 points = zh_json['data']['Points']
 ID = zh_json['data']['ID']
 name = zh_json['data']['Name']
